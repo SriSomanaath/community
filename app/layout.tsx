@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { DM_Sans } from "next/font/google";
-import AuthProvider from "@/context/AuthProvider";
+// import AuthProvider from "@/context/AuthProvider";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -22,11 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <AuthProvider>
+      {/* <AuthProvider> */}
         <body className={`antialiased ${dmSans.className}`}>
           {children}
         </body>
-      </AuthProvider>
+      {/* </AuthProvider> */}
     </html>
   );
 }
