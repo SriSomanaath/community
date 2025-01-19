@@ -1,0 +1,84 @@
+.footer {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    text-align: center;
+}
+
+.socialSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.button{
+    background-color: #1e1e1e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+.socialText {
+    font-size: 1rem;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    color: #1e1e1e;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #007bff;
+}
+
+.contentSection {
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.col {
+    text-align: left;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.copySection {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.copyLink {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyLink:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,217 @@
+.container {
+  display: flex;
+  height: calc(100vh - 4rem);
+  background-color: #f9f9f9;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  padding-right: 15px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+.postJob {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.postJob:focus {
+  outline: none;
+}
+
+.sidebar h6 {
+  font-weight: 500;
+  margin-bottom: 0px !important;
+}
+
+.sidebarJobTitle {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebarJobloc {
+  font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+  color: #747b81;
+}
+
+.sidebarJobPosted {
+  font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+  color: #7f868d;
+}
+
+.sidebar h6 {
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.jobButton {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  text-align: left;
+  border: none 1px solid #999797;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.jobButton:hover,
+.activeJob {
+  background-color: #d6d5d5;
+  color: #1e1e1e;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  position: relative;
+}
+
+.tabContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabButton {
+  padding: 10px 15px;
+  color: #007bff;
+  border-bottom: 2px solid #f6f7f800;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tabButton:hover,
+.activeTab {
+  border-bottom: 2px solid #007bff;
+  color: #138dff;
+}
+
+.tableContainer {
+  overflow-y: auto;
+  max-height: 70vh;
+  border-radius: 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 15px!important;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table th {
+  background-color: #f5f9ff;
+}
+
+.tableRow:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.status {
+  text-transform: capitalize;
+}
+
+.detailsPopup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height:90vh;
+  margin-top: 4.5rem;
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease;
+}
+
+.timeline {
+  margin-top: 20px;
+}
+
+.timelineItem {
+  padding: 10px;
+  border-left: 3px solid #ccc;
+  position: relative;
+}
+
+.timelineItem.completed {
+  border-color: green;
+}
+
+.timelineItem::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.timelineItem.completed::before {
+  background-color: green;
+}
+
+.stageTitle {
+  font-weight: bold;
+}
+
+.stageDescription {
+  font-size: 0.9em;
+  color: #666;
+}
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: #ff0000;
+}

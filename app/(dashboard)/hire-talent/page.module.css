@@ -1,0 +1,136 @@
+
+.dashboardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    width: 1000px;
+    height: 500px;
+}
+
+.container {
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button{
+    background-color: #1e1e1e;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .Sectioncontainer{
+    padding: 20px;
+    margin: 4rem auto;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contCard{
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    padding:  0.5rem 2rem;
+    margin-top: 5rem;
+    margin-bottom: 30px;
+  }
+
+  .contCard img{
+    width: 100%;
+    height: auto;
+  }
+
+  .imgContainer{
+    text-align: end;
+  }
+
+  .imgContainer img{
+    border-top-right-radius: 15px;
+    display: inline-block;
+  }
+
+  .statsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 8rem;
+}
+
+.statsContainer > div {
+    text-align: center;
+}
+
+.statsContainer h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.statsContainer span {
+    font-size: 1rem;
+    color: #555;
+}
+
+  .services {
+    animation: fadeInSteps 1s ease-in-out;
+  }
+  
+  .serviceItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSteps 0.5s ease-in-out forwards;
+  }
+  
+  .serviceItem:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .serviceItem:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .serviceItem:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+  .serviceItem:nth-child(5) {
+    animation-delay: 1.2s;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #afdbf5;
+  }
+  
+  
+  @keyframes fadeInSteps {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

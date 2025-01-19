@@ -1,0 +1,22 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.heroButton {
+    margin-top: 20px;
+    border: none;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+  }
+  
+  .heroButtonIcon {
+    font-size: 1.2em;
+  }
+  

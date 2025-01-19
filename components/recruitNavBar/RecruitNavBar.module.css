@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: bold;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.navLinks li {
+  margin-left: 15px;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.navLinks li a:hover {
+  color: #007BFF;
+}
+
+.searchContainer {
+  margin-right: 15px;
+}
+
+.searchInput {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.searchInput:focus {
+  border-color: #007BFF;
+}
+
+.authButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.signInButton,
+.loginButton {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signInButton {
+  border: none;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.loginButton {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger.active .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .navLinks li {
+    margin: 10px 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+}

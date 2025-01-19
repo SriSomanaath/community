@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbd8d8;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .logo_img{
+    margin-left: 60px;
+  }
+  
+  .logo a:hover {
+    color: #000;
+  }
+  
+  .searchBars {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .searchInput {
+    width: 200px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .searchInput:focus {
+    border-color: #007bff;
+  }
+  
+  .authButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signIn {
+    color: #1e1e1e;
+  }
+  
+  .register {
+    background-color: #1e1e1e;
+    border-radius: 30px;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .searchBars {
+      flex-direction: column;
+      gap: 10px;
+      justify-content: flex-start;
+    }
+  
+    .searchInput {
+      width: 100%;
+    }
+  
+    .authButtons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  

@@ -1,0 +1,75 @@
+.courseCatalogSection {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sectionTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .sectionSubtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .courseList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .courseRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .courseRow:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courseInfo {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .courseName {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .courseDescription {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .courseDetails {
+    flex-basis: 200px;
+    text-align: right;
+  }
+  
+  .duration,
+  .level {
+    font-size: 14px;
+    color: #666;
+  }
+  
